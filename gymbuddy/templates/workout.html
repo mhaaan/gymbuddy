@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+Track Workout
+{% endblock title %}
+{% block head %}
+
+
+<h1>Track Workout</h1>
+
+<form action="/workout" method="post">{% csrf_token %}
+    <button id="add_exercise">Start New Workout</button>
+</form>
+
+</script>
+
+
+
+
+{% endblock head %}

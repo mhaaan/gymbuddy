@@ -54,3 +54,13 @@ def handlelogout(request):
     logout(request)
     messages.success(request, "Logout Success")
     return redirect('/login')
+
+def workout(request):
+    # if request.method == 'POST':
+    #     # Handle POST request data here
+    #     # You can access form data using request.POST dictionary
+    #     # Example: exercise = request.POST['exercise']
+    #     pass
+    # else:
+    #     # Handle GET request here
+    return render(request, 'workout.html')
